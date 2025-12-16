@@ -117,35 +117,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FIELD TESTED WITH */}
-<section className="py-24 px-8 bg-charcoal relative">
-  <div className="absolute inset-0 topo-bg" />
-  <div className="relative z-10 max-w-4xl mx-auto">
-    <p className="text-[10px] font-mono text-accent/60 tracking-widest mb-12 text-center">// FIELD TESTED WITH</p>
-    
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-      {[
-        // { src: '/images/partners/3ab.png', name: '3rd Assault' },
-        // { src: '/images/partners/AZOV_logo.svg', name: 'Azov' },
-        // { src: '/images/partners/nato.png', name: 'NATO' },
-        { src: '/images/partners/edth_logo.png', name: 'EDTH' },
-      ].map((partner) => (
-        <div 
-          key={partner.name} 
-          className="w-full py-8 px-6 border border-white/10 hover:border-accent/30 transition-all bg-black/30 flex items-center justify-center group"
-        >
-          <img 
-            src={partner.src} 
-            alt={partner.name}
-            // className="h-12 w-auto object-contain invert opacity-60 group-hover:opacity-90 transition-opacity"
-            className="h-12 w-auto object-contain brightness-15 invert opacity-40 group-hover:opacity-70 transition-opacity"
-            // className="h-12 w-auto object-contain brightness-15 invert sepia opacity-90 group-hover:opacity-10 transition-opacity"
-          />
+{/* FIELD TESTED WITH */}
+      <section className="py-24 px-8 bg-charcoal relative">
+        <div className="absolute inset-0 topo-bg" />
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <p className="text-[10px] font-mono text-accent/60 tracking-widest mb-12 text-center">// FIELD TESTED WITH</p>
+          
+          {/* CHANGED: Used flex + justify-center to center items regardless of count */}
+          <div className="flex flex-wrap justify-center gap-8">
+            {[
+              // { src: '/images/partners/3ab.png', name: '3rd Assault' },
+              // { src: '/images/partners/AZOV_logo.svg', name: 'Azov' },
+              // { src: '/images/partners/nato.png', name: 'NATO' },
+              { src: '/images/partners/edth_logo.png', name: 'EDTH' },
+            ].map((partner) => (
+              <div 
+                key={partner.name} 
+                // CHANGED: Replaced w-full with w-64 to keep boxes uniform
+                className="w-64 py-8 px-6 border border-white/10 hover:border-accent/30 transition-all bg-black/30 flex items-center justify-center group"
+              >
+                <img 
+                  src={partner.src} 
+                  alt={partner.name}
+                  className="h-12 w-auto object-contain brightness-15 invert opacity-40 group-hover:opacity-70 transition-opacity"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* CTA */}
       <section className="py-32 px-8 text-center relative">
