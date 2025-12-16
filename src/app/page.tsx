@@ -98,8 +98,8 @@ export default function Home() {
             <div className="space-y-4 mb-8">
               {[
                 ['TYPE', 'MINIATURE RADAR'],
-                ['WEIGHT', '< 500g'],
-                ['RANGE', '160m'],
+                ['WEIGHT', '< 300g'],
+                ['RANGE', '100m'],
                 ['INTEGRATION', 'AUTONOMOUS / FPV'],
                 ['STATUS', 'FIELD DEPLOYMENT Q1 2026'],
               ].map(([k,v])=>(
@@ -110,9 +110,9 @@ export default function Home() {
               ))}
             </div>
             
-            <p className="text-xs text-accent tracking-widest text-center">
-              ALL-WEATHER • HARD-KILL • ZERO LATENCY
-            </p>
+            {/* <p className="text-xs text-accent tracking-widest text-center">
+              ALL-WEATHER • HARD-KILL 
+            </p> */}
           </div>
         </div>
       </section>
@@ -125,9 +125,9 @@ export default function Home() {
     
     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
       {[
-        { src: '/images/partners/3ab.png', name: '3rd Assault' },
-        { src: '/images/partners/AZOV_logo.svg', name: 'Azov' },
-        { src: '/images/partners/nato.png', name: 'NATO' },
+        // { src: '/images/partners/3ab.png', name: '3rd Assault' },
+        // { src: '/images/partners/AZOV_logo.svg', name: 'Azov' },
+        // { src: '/images/partners/nato.png', name: 'NATO' },
         { src: '/images/partners/edth_logo.png', name: 'EDTH' },
       ].map((partner) => (
         <div 
