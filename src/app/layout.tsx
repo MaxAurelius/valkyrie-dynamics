@@ -4,7 +4,14 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Valkyrie Dynamics | Miniature Radar Systems for Drones',
   description:
-    'See the Unseen. All-weather miniature radar systems for autonomous drone operations.',
+    'Building miniature radar systems for autonomous drone operations.',
+
+
+    icons: {
+    icon: '/images/favicon.png', // standard favicon
+    shortcut: '/images/favicon.png',
+    apple: '/images/favicon.png', // recommended for mobile users
+  },
 
   keywords: [
     'radar',
@@ -23,12 +30,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Valkyrie Dynamics',
     description:
-      'See the Unseen. Miniature radar systems for autonomous drone operations.',
+      'Building miniature radar systems for autonomous drone operations.',
     url: 'https://valkyriedynamics.ai',
     siteName: 'Valkyrie Dynamics',
     images: [
       {
-        url: '/images/og-image.png', // IMPORTANT: use a REAL OG image
+        url: '/images/favicon.png', // IMPORTANT: use a REAL OG image
         width: 1200,
         height: 630,
         alt: 'Valkyrie Dynamics',
@@ -42,8 +49,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Valkyrie Dynamics',
     description:
-      'See the Unseen. Miniature radar systems for autonomous drone operations.',
-    images: ['/images/og-image.png'],
+      'Building miniature radar systems for autonomous drone operations.',
+    images: ['/images/favicon.png'],
   },
 }
 
