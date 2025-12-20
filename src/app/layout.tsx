@@ -1,20 +1,34 @@
 import './globals.css'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Valkyrie Dynamics | Miniature Radar Systems for Drones',
-  description: 'See the Unseen. All-weather miniature radar systems for autonomous drone operations.',
-  keywords: ['radar', 'drone', 'FPV', 'defense', 'Ukraine', 'military', 'autonomous', 'ai', 'USA', 'EU'],
+  description:
+    'See the Unseen. All-weather miniature radar systems for autonomous drone operations.',
+
+  keywords: [
+    'radar',
+    'drone',
+    'FPV',
+    'defense',
+    'autonomous',
+    'AI',
+    'military',
+  ],
+
   authors: [{ name: 'Valkyrie Dynamics' }],
-  
+
+  metadataBase: new URL('https://valkyriedynamics.ai'),
+
   openGraph: {
     title: 'Valkyrie Dynamics',
-    description: 'See the Unseen. Miniature radar systems for drones.',
+    description:
+      'See the Unseen. Miniature radar systems for autonomous drone operations.',
     url: 'https://valkyriedynamics.ai',
     siteName: 'Valkyrie Dynamics',
     images: [
       {
-        url: '/images/og-image.png',
+        url: '/images/og-image.png', // IMPORTANT: use a REAL OG image
         width: 1200,
         height: 630,
         alt: 'Valkyrie Dynamics',
@@ -23,17 +37,14 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
   },
-  icons: {
-    icon: '/favicon.ico', // or '/favicon.ico'
-  },
+
   twitter: {
     card: 'summary_large_image',
     title: 'Valkyrie Dynamics',
-    description: 'See the Unseen. Miniature radar systems for drones.',
+    description:
+      'See the Unseen. Miniature radar systems for autonomous drone operations.',
     images: ['/images/og-image.png'],
   },
-  
-  // REMOVED icons config - Next.js auto-detects from app folder
 }
 
 export default function RootLayout({
