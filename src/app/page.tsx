@@ -13,7 +13,7 @@ export default function Home() {
       <img 
         src="/images/logo.png" 
         alt="Valkyrie Dynamics" 
-        className="h-5 md:h-6 w-auto invert opacity-80"
+        className="h-10 md:h-8 w-auto invert opacity-80"
       />
       <div className="font-mono text-[8px] md:text-[10px] text-accent border border-accent/30 px-2 md:px-4 py-1.5 flex gap-2 md:gap-4">
         <span className="flex items-center gap-1.5">
@@ -101,11 +101,11 @@ export default function Home() {
             
             <div className="space-y-4 mb-8">
               {[
-                ['TYPE', 'FMCW MINIATURE RADAR'],
-                ['WEIGHT', '< 500g'],
-                ['RANGE', '160m'],
+                ['TYPE', 'MINIATURE RADAR'],
+                ['WEIGHT', '< 300g'],
+                ['RANGE', '100m'],
                 ['INTEGRATION', 'AUTONOMOUS / FPV'],
-                ['STATUS', 'FIELD DEPLOYMENT Q1 2025'],
+                ['STATUS', 'FIELD DEPLOYMENT Q1 2026'],
               ].map(([k,v])=>(
                 <div key={k} className="flex justify-between border-b border-white/10 pb-2">
                   <span className="font-mono text-xs text-white/40">{k}</span>
@@ -115,7 +115,7 @@ export default function Home() {
             </div>
             
             <p className="text-xs text-accent tracking-widest text-center">
-              ALL-WEATHER • HARD-KILL • ZERO LATENCY
+              ALL-WEATHER • HARD-KILL • LOW LATENCY
             </p>
           </div>
         </div>
@@ -151,19 +151,33 @@ export default function Home() {
     </div>
   </div>
 </section>
-      {/* CTA */}
-      <section className="py-32 px-8 text-center relative">
-        <div className="absolute inset-0 bg-gradient-to-t from-accent/5 to-transparent" />
-        <div className="relative z-10">
-          <p className="text-[10px] font-mono text-accent/60 tracking-widest mb-4">// INITIATE</p>
-          <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-12">JOIN THE MISSION</h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="ghost-btn">[ INVESTORS: REQUEST BRIEFING ]</button>
-            <button className="ghost-btn">[ ENGINEERS: JOIN THE UNIT ]</button>
-          </div>
-          <p className="mt-16 text-[10px] font-mono text-white/30">VILNIUS, LT • KYIV, UA</p>
-        </div>
-      </section>
+   {/* CTA */}
+<section className="py-32 px-8 text-center relative">
+  <div className="absolute inset-0 bg-gradient-to-t from-accent/5 to-transparent" />
+  <div className="relative z-10">
+    <p className="text-[10px] font-mono text-accent/60 tracking-widest mb-4">// INITIATE</p>
+    <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-12">JOIN THE MISSION</h2>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <a 
+        href="https://www.linkedin.com/company/valkyrie-dynamics" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="ghost-btn"
+      >
+        [ INVESTORS: REQUEST BRIEFING ]
+      </a>
+      <a 
+        href="https://www.linkedin.com/company/valkyrie-dynamics" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="ghost-btn"
+      >
+        [ ENGINEERS: JOIN THE UNIT ]
+      </a>
+    </div>
+    <p className="mt-16 text-[10px] font-mono text-white/30">VILNIUS, LT • KYIV, UA • SF, US</p>
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer className="py-8 px-8 border-t border-white/5">
