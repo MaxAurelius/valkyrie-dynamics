@@ -73,15 +73,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* AEGIS-1 */}
+      {/* Heimdall */}
       <section className="min-h-screen flex items-center justify-center px-8 py-24">
         <div className="max-w-5xl w-full grid md:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <div className="absolute -inset-4 bg-accent/5 blur-3xl" />
             <div className="relative border border-white/10 bg-gradient-to-br from-charcoal to-black p-8">
               <Image 
-                src="/images/aegis-1.png" 
-                alt="Aegis-1"
+                src="/images/heimdall.png" 
+                alt="Heimdall"
                 width={500}
                 height={400}
                 className="w-full h-auto"
@@ -96,7 +96,7 @@ export default function Home() {
           <div>
             <p className="text-[10px] font-mono text-accent/60 tracking-widest mb-4">// SYSTEM</p>
             <h2 className="font-orbitron text-3xl md:text-4xl font-bold mb-8">
-              AEGIS-2
+              Heimdall
             </h2>
             
             <div className="space-y-4 mb-8">
