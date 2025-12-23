@@ -7,11 +7,11 @@ export const metadata: Metadata = {
     'Building miniature radar systems for autonomous drone operations.',
 
 
-    icons: {
-    icon: '/images/favicon.png', // standard favicon
-    shortcut: '/images/favicon.png',
-    apple: '/images/favicon.png', // recommended for mobile users
-  },
+  //   icons: {
+  //   icon: '/images/favicon.png', // standard favicon
+  //   shortcut: '/images/favicon.png',
+  //   apple: '/images/favicon.png', // recommended for mobile users
+  // },
 
   keywords: [
     'radar',
