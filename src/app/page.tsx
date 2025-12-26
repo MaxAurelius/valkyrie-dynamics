@@ -175,7 +175,8 @@ export default function Home() {
         [ ENGINEERS: JOIN THE UNIT ]
       </a>
     </div>
-    <p className="mt-16 text-[10px] font-mono text-white/30">VILNIUS, LT • KYIV, UA • SF, US</p>
+    <p className="mt-16 text-[10px] font-mono text-white/30">VILNIUS, LT • KYIV, UA</p>
+    {/* <p className="mt-16 text-[10px] font-mono text-white/30">VILNIUS, LT • KYIV, UA • SF, US</p> */}
   </div>
 </section>
 
